@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+body{
+    display:flex;/*横並び*/
+    flex-wrap:wrap;/*要素が増えて入りきらない時、折り返して複数行で表示*/
+}
+
+.box{
+    width:100px;
+    height:100px;
+    background-color: skyblue;
+    cursor:pointer;    
+    transition: 1s; /*プロパティが変化する際のアニメーションの速度*/
+    margin: 0 8px 8px 0;
+    text-align:center;
+    line-height:100px;
+
+}
+
+
+.win{
+    background-color:pink;
+    border-radius: 50%;/*角を丸めて円型に*/
+    transform:rotate(360deg); /*transformで回転、拡大縮小、傾斜、移動ができる。今回の場合は360°の回転*/
+}
+
+.lose{
+    transform:scale(0.9); /*サイズ縮小*/
+}
